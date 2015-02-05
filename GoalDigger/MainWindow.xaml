@@ -5,6 +5,7 @@
     <Grid Background="Purple">
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 0">
             <TextBlock Height="40" FontWeight="ExtraBold" FontSize="32">DashBoard</TextBlock>
+            <Button Visibility="Visible" IsEnabled="True">Back</Button>
         </StackPanel>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="40, 0">
             <TextBlock Height="40" FontWeight="ExtraBold" FontSize="32">Gerald A. Wakefield</TextBlock>
