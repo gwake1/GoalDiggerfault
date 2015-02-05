@@ -61,7 +61,8 @@
   <ItemGroup>
     <Compile Include="GoalDiggerUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GoalDiggerUserStory.cs" />
+    <Compile Include="GoalDiggerUserStoryNavToBudget.cs" />
+    <Compile Include="GoalDiggerUserStoryNavToProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

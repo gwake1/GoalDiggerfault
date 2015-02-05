@@ -10,7 +10,7 @@ using TestStack.BDDfy;
 namespace GoalDiggerTests
 {
     [TestClass]
-    public class GoalDiggerUserStory
+    public class GoalDiggerUserStoryNavToProfile
     {
         //private static TestContext test_context;
         private static Window window;
@@ -41,7 +41,7 @@ namespace GoalDiggerTests
         void WhenTheBudgetButtonIsClicked()
         {
             System.Threading.Thread.Sleep(500); // So we can see it
-            Budget_Button.Click();
+            Profile_Button.Click();
             System.Threading.Thread.Sleep(500); // So we can see it
         }
 
@@ -52,15 +52,15 @@ namespace GoalDiggerTests
 
         void ThenTheNavStateBoxShouldContainBudget()
         {
-            Assert.AreEqual("Budget", NavState_TextBox.Text);
-        }
-
-        void AndThenTheBudgetButtonShouldBeDisabled()
-        {
-            Assert.IsFalse(Budget_Button.Enabled);
+            Assert.AreEqual("Profile", NavState_TextBox.Text);
         }
 
         void AndThenTheProfileButtonShouldBeDisabled()
+        {
+            Assert.IsFalse(Profile_Button.Enabled);
+        }
+
+        void AndThenTheBudgetButtonShouldBeDisabled()
         {
             Assert.IsFalse(Profile_Button.Enabled);
         }
@@ -82,7 +82,7 @@ namespace GoalDiggerTests
 
 
         [TestMethod]
-        public void ExecuteStoryTest()
+        public void StoryMainWindowNavToProfile()
         {
             this.BDDfy();
         }
