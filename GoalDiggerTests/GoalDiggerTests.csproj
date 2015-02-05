@@ -64,6 +64,7 @@
     <Compile Include="GoalDiggerUserStoryNavToBudget.cs" />
     <Compile Include="GoalDiggerUserStoryNavToProfile.cs" />
     <Compile Include="GoalDiggerUserStoryNavToUpdate.cs" />
+    <Compile Include="GoalDiggerUserStoryNavToWishList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
