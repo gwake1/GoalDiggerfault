@@ -24,5 +24,62 @@ namespace GoalDigger
         {
             InitializeComponent();
         }
+
+        private void NavStateTransfer(string NavTransfer)
+        {
+            NavStateTextBox.IsReadOnly = false;
+            NavStateTextBox.Text = NavTransfer;
+            if (!BackNavButton.IsEnabled && NavStateTextBox.Text == "DashBoard")
+            {
+                NavStateTextBox.IsReadOnly = true;
+                BackNavButton.IsEnabled = false;
+                EnableMainFeatureButtons();
+            }
+            BackNavButton.IsEnabled = true;
+            DisableMainFeatureButtons();
+        }
+
+        private void DisableMainFeatureButtons()
+        {
+            Budget.IsEnabled = false;
+            Profile.IsEnabled = false;
+            Update.IsEnabled = false;
+            WishList.IsEnabled = false;
+        }
+
+        private void EnableMainFeatureButtons()
+        {
+            Budget.IsEnabled = true;
+            Profile.IsEnabled = true;
+            Update.IsEnabled = true;
+            WishList.IsEnabled = true;
+        }
+
+        private void BudgetButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavStateTransfer("Budget");
+            BackNavButton.IsEnabled = true;
+        }
+
+        private void BackNav_Click(object sender, RoutedEventArgs e)
+        {
+            NavStateTransfer("DashBoard");
+        }
+
+        private void    ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavStateTransfer("Profile");
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavStateTransfer("Update");
+        }
+
+        private void WishListButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavStateTransfer("Wish List");
+        }
+
     }
 }
