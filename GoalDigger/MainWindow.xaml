@@ -1,0 +1,26 @@
+﻿<Window x:Class="GoalDigger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="880">
+    <Grid Background="Purple">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 0">
+            <TextBlock Height="40" FontWeight="ExtraBold" FontSize="32">DashBoard</TextBlock>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="40, 0">
+            <TextBlock Height="40" FontWeight="ExtraBold" FontSize="32">Gerald A. Wakefield</TextBlock>
+        </StackPanel>
+        <StackPanel Height="370" Width="630" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Budget" Content="Budget" Height="150" Width="300" HorizontalAlignment="Center" Margin="10, 10, 5, 5" Background="Green"/>
+                <Button x:Name="Profile" Content="Profile" Height="150" Width="300" HorizontalAlignment="Center" Margin="5, 10, 10, 5" Background="Crimson"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Update" Content="Update" Height="150" Width="300" HorizontalAlignment="Center" Margin="10, 5, 5, 10" Background="IndianRed"/>
+                <Button x:Name="WishList" Content="WishList" Height="150" Width="300" HorizontalAlignment="Center" Margin="5, 5, 10, 10" Background="Chocolate"/>
+            </StackPanel>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
