@@ -29,14 +29,17 @@ namespace GoalDigger
         {
             NavStateTextBox.IsReadOnly = false;
             NavStateTextBox.Text = NavTransfer;
-            if (!BackNavButton.IsEnabled && NavStateTextBox.Text == "DashBoard")
+            NavStateTextBox.IsReadOnly = true;
+            if (NavTransfer == "DashBoard")
             {
-                NavStateTextBox.IsReadOnly = true;
                 BackNavButton.IsEnabled = false;
                 EnableMainFeatureButtons();
             }
-            BackNavButton.IsEnabled = true;
-            DisableMainFeatureButtons();
+            else
+            {
+                BackNavButton.IsEnabled = true;
+                DisableMainFeatureButtons();
+            }   
         }
 
         private void DisableMainFeatureButtons()
