@@ -4,22 +4,21 @@
         Title="MainWindow" Height="600" Width="880">
     <Grid Background="Purple">
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 0">
-            <TextBlock Height="40" FontWeight="ExtraBold" FontSize="32">DashBoard</TextBlock>
-            <Button Visibility="Visible" IsEnabled="True">Back</Button>
+            <TextBox x:Name="NavStateTextBox" Height="40" FontWeight="ExtraBold" FontSize="32" IsReadOnly="True">DashBoard</TextBox>
+            <Button x:Name="BackNavButton" Visibility="Hidden" IsEnabled="False">Back</Button>
         </StackPanel>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="40, 0">
-            <TextBlock Height="40" FontWeight="ExtraBold" FontSize="32">Gerald A. Wakefield</TextBlock>
+            <TextBox x:Name="UserNameTextBox" Height="40" FontWeight="ExtraBold" FontSize="32" IsReadOnly="True" Visibility="Visible">Gerald A. Wakefield</TextBox>
         </StackPanel>
         <StackPanel Height="370" Width="630" HorizontalAlignment="Center" VerticalAlignment="Center">
-        
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="Budget" Content="Budget" Height="150" Width="300" HorizontalAlignment="Center" Margin="10, 10, 5, 5" Background="Green"/>
-                <Button x:Name="Profile" Content="Profile" Height="150" Width="300" HorizontalAlignment="Center" Margin="5, 10, 10, 5" Background="Crimson"/>
+                <Button x:Name="Budget" Content="Budget" Height="150" Width="300" HorizontalAlignment="Center" Margin="10, 10, 5, 5" Background="Green" IsEnabled="True"/>
+                    <Button x:Name="Profile" Content="Profile" Height="150" Width="300" HorizontalAlignment="Center" Margin="5, 10, 10, 5" Background="Crimson" IsEnabled="True"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="Update" Content="Update" Height="150" Width="300" HorizontalAlignment="Center" Margin="10, 5, 5, 10" Background="IndianRed"/>
-                <Button x:Name="WishList" Content="WishList" Height="150" Width="300" HorizontalAlignment="Center" Margin="5, 5, 10, 10" Background="Chocolate"/>
+                    <Button x:Name="Update" Content="Update" Height="150" Width="300" HorizontalAlignment="Center" Margin="10, 5, 5, 10" Background="IndianRed" IsEnabled="True"/>
+                    <Button x:Name="WishList" Content="WishList" Height="150" Width="300" HorizontalAlignment="Center" Margin="5, 5, 10, 10" Background="Chocolate" IsEnabled="True"/>
             </StackPanel>
         </StackPanel>
         </StackPanel>
