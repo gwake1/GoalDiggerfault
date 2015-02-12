@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.Entity;
+using GoalDigger.Model;
+using GoalDigger.Repository;
+using GoalDigger;
 
 namespace GoalDigger
 {
@@ -20,9 +24,11 @@ namespace GoalDigger
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static WishRepository repo = new WishRepository();
         public MainWindow()
         {
             InitializeComponent();
+            repo.GetCount();
         }
 
         private void NavStateTransfer(string NavTransfer)
