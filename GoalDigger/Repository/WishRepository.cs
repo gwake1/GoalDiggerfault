@@ -67,5 +67,10 @@ namespace GoalDigger.Repository
         {
             throw new NotImplementedException();
         }
+
+        public WishContext Context()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

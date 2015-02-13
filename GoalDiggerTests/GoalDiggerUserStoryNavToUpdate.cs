@@ -7,7 +7,7 @@ using TestStack.White.UIItems;
 using TestStack.White.UIItems.WindowItems;
 using TestStack.BDDfy;
 
-namespace GoalDiggerTests
+namespace GoalDigger
 {
     [TestClass]
     public class GoalDiggerUserStoryNavToUpdate

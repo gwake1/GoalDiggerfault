@@ -2,10 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GoalDigger.Model;
 
-namespace GoalDiggerTests
+namespace GoalDigger
 {
     [TestClass]
-    public class WishModelTest
+    public class WishConstructorTest
     {
         [TestMethod]
         public void CreatingAnEventSotresItsProperties()

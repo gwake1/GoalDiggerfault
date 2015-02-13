@@ -6,7 +6,7 @@
     <ProjectGuid>{C7400450-66BE-439B-9E91-CC0F0E7969B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoalDiggerTests</RootNamespace>
+    <RootNamespace>GoalDigger</RootNamespace>
     <AssemblyName>GoalDiggerTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -65,7 +65,9 @@
     <Compile Include="GoalDiggerUserStoryNavToProfile.cs" />
     <Compile Include="GoalDiggerUserStoryNavToUpdate.cs" />
     <Compile Include="GoalDiggerUserStoryNavToWishList.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CreateWishTest.cs" />
+    <Compile Include="TestHelper.cs" />
+    <Compile Include="WishConstructorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
