@@ -9,7 +9,7 @@ using System.Data.Entity;
 namespace GoalDigger.Repository
 {
     public class WishRepository: IWishRepository
-    {
+    { 
         private WishContext _dbContext;
 
         public WishRepository()

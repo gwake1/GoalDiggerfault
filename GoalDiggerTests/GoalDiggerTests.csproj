@@ -65,9 +65,16 @@
     <Compile Include="GoalDiggerUserStoryNavToProfile.cs" />
     <Compile Include="GoalDiggerUserStoryNavToUpdate.cs" />
     <Compile Include="GoalDiggerUserStoryNavToWishList.cs" />
+    <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoalDigger\GoalDigger.csproj">
+      <Project>{e9eb9b34-f135-460f-8ef7-f132033c4b90}</Project>
+      <Name>GoalDigger</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

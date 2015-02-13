@@ -15,7 +15,7 @@ namespace GoalDigger.Model
         public string Date {get; set;}
         public int Price {get; set;}
 
-    public Wish()
+    public Wish() 
     {
     //Do Something
     }
