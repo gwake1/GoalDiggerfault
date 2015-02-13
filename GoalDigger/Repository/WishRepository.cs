@@ -25,7 +25,8 @@ namespace GoalDigger.Repository
 
         public void Add(Model.Wish W)
         {
-            throw new NotImplementedException();
+            _dbContext.Wishes.Add(W);
+            _dbContext.SaveChanges();
         }
 
         public void Delete(Model.Wish W)
@@ -35,7 +36,9 @@ namespace GoalDigger.Repository
 
         public void Clear()
         {
-            throw new NotImplementedException();
+            var a = this.All();
+            _dbContext.Wishes.RemoveRange(a);
+            _dbContext.SaveChanges();
         }
 
         public IEnumerable<Model.Wish> PastEvents()
@@ -50,7 +53,8 @@ namespace GoalDigger.Repository
 
         public IEnumerable<Model.Wish> All()
         {
-            throw new NotImplementedException();
+            var query = from Item in _dbContext.Wishes select Item;
+            return query.ToList<Model.Wish>();
         }
 
         public Model.Wish GetById(int id)

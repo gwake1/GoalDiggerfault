@@ -1,4 +1,5 @@
 ﻿﻿using System;
+using System.Data.Entity;
 using System.IO;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -45,7 +46,7 @@ namespace GoalDigger
         public void ThenIShouldSeeXWishes(int expected)
         {
             Assert.IsNotNull(window);
-            SearchCriteria searchCriteria = SearchCriteria.ByAutomationId("CountdownList").AndIndex(0);
+            SearchCriteria searchCriteria = SearchCriteria.ByAutomationId("WishList").AndIndex(0);
             ListBox list_box = (ListBox)window.Get(searchCriteria);
             Assert.AreEqual(expected, list_box.Items.Count);
         }

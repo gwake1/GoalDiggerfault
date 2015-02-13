@@ -5,7 +5,7 @@ using GoalDigger.Model;
 namespace GoalDigger
 {
     [TestClass]
-    public class WishConstructorTest
+    public class WishModelTest
     {
         [TestMethod]
         public void CreatingAnEventSotresItsProperties()
